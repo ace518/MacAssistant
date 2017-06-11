@@ -48,7 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechRecognizerDelegate {
     
     func registerHotkey() {
         guard let keyCombo = KeyCombo(doubledCocoaModifiers: .command) else { return }
-        let hotKey = HotKey(identifier: "CommandDoubleTapped",
+        let hotKey = HotKey(identifier: "CommandControlB",
                              keyCombo: keyCombo,
                              target: self,
                              action: #selector(AppDelegate.hotkeyPressed))
